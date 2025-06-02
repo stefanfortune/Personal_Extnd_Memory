@@ -12,9 +12,9 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install openai  # or your preferred SDK
+          pip install openai 
 
-      - name: Run your script
+      - name: Run script
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
